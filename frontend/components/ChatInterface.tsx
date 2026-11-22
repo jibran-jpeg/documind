@@ -32,10 +32,10 @@ export default function ChatInterface({ documentId, filename }: { documentId: st
     }
   }, [loading]);
 
-  const handleSend = async () => {
-    if (!input.trim() || loading) return;
-    const q = input.trim();
-    setInput("");
+  const handleSend = async (overrideQuery?: string) => {
+    const q = (typeof overrideQuery === "string" ? overrideQuery : input).trim();
+    if (!q || loading) return;
+    if (typeof overrideQuery !== "string") setInput("");
     setMessages((prev) => [...prev, { role: "user", content: q }]);
     setLoading(true);
 
@@ -135,6 +135,24 @@ export default function ChatInterface({ documentId, filename }: { documentId: st
       {/* Solid Input Area Fixed at Bottom */}
       <div className="shrink-0 border-t border-slate-200 bg-white p-4">
         <div className="max-w-4xl mx-auto w-full relative">
+          {messages.length === 1 && (
+            <div className="mb-3 flex flex-wrap gap-2">
+              {[
+                "How does chunking and embedding work?",
+                "How are hallucinations prevented?",
+                "What are the latency and deployment specs?",
+              ].map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => handleSend(prompt)}
+                  className="text-[12px] px-3 py-1.5 rounded-full bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 transition-colors cursor-pointer"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          )}
           <div className="bg-white border border-slate-300 shadow-sm rounded-xl p-1.5 flex items-end focus-within:border-slate-400 focus-within:shadow-md focus-within:ring-4 focus-within:ring-slate-100 transition-all">
             <textarea
               ref={inputRef}
@@ -152,12 +170,13 @@ export default function ChatInterface({ documentId, filename }: { documentId: st
               disabled={loading}
             />
             <button
-              onClick={handleSend}
+              type="button"
+              onClick={() => handleSend()}
               disabled={loading || !input.trim()}
               className={`shrink-0 w-9 h-9 mb-1 mr-1 rounded-lg flex items-center justify-center transition-colors ${
                 loading || !input.trim() 
                   ? "bg-slate-100 text-slate-400 cursor-not-allowed" 
-                  : "bg-slate-900 text-white hover:bg-slate-800"
+                  : "bg-slate-900 text-white hover:bg-slate-800 cursor-pointer"
               }`}
             >
               <Send size={16} />
