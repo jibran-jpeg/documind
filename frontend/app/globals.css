@@ -1,68 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --bg-canvas: #f7f6f2;
-  --bg-panel: #ffffff;
-  --bg-subtle: #f1efe9;
-  --bg-hover: #eae7df;
-  --border-hairline: #e4e1d8;
-  --border-strong: #cfcbc0;
-  --ink-1: #161615;
-  --ink-2: #52514e;
-  --ink-3: #85837d;
-  --pastel-amber-bg: #fbf3db;
-  --pastel-amber-border: #e5d196;
-  --pastel-amber-ink: #7d5300;
-  --pastel-green-bg: #edf3ec;
-  --pastel-green-border: #c4dcc1;
-  --pastel-green-ink: #29592d;
-  --pastel-blue-bg: #e7f2f8;
-  --pastel-blue-border: #bdd9ea;
-  --pastel-blue-ink: #1b5c85;
-  --font-serif: 'Newsreader', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Apple Neutral Base */
+  --bg-page: #f5f5f7;
+  --bg-card: #ffffff;
+  --ink-primary: #1d1d1f;
+  --ink-secondary: #6e6e73;
+  --ink-tertiary: #86868b;
+  --hairline: rgba(0, 0, 0, 0.08);
+
+  /* Color-Wheel Complementary Harmony: Deep Botanical Teal (170°) + Warm Coral Spark (15°) */
+  --lead-teal-dark: #0d3b33;
+  --lead-teal: #115e50;
+  --lead-teal-soft: #e6f4f1;
+  --spark-coral: #e5533d;
+  --spark-coral-soft: #fff1ee;
+  --spark-amber: #d97706;
+
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 html,
 body {
-  height: 100%;
-  background-color: var(--bg-canvas);
-  color: var(--ink-1);
+  min-height: 100%;
+  background-color: var(--bg-page);
+  color: var(--ink-primary);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.dm-serif {
-  font-family: var(--font-serif);
-}
-
-.dm-mono {
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-}
-
-/* Subtle editorial scrollbar */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #d4d0c5;
-  border-radius: 99px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #b5b0a3;
-}
-
 ::selection {
-  background: #ece5cf;
-  color: #161615;
+  background: #c8ebe3;
+  color: #0d3b33;
 }
