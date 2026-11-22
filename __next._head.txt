@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[78244,["/documind/_next/static/chunks/0c26twb2b5_xr.js"],"ViewportBoundary"]
+3:I[78244,["/documind/_next/static/chunks/0c26twb2b5_xr.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[8325,["/documind/_next/static/chunks/0c26twb2b5_xr.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"DocuMind — Grounded RAG Document Q&A Workbench"}],["$","meta","1",{"name":"description","content":"Retrieval-Augmented Generation (RAG) document analysis workbench built with Python FastAPI, LangChain, ChromaDB, HuggingFace all-MiniLM-L6-v2 embeddings, Groq Llama 3.1, and Next.js."}],["$","link","2",{"rel":"icon","href":"/documind/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BNjYrIjXFvBayyYVSj_jc"}
