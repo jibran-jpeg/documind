@@ -142,29 +142,29 @@ const APPLE_UI_CSS = `
   width: 100%;
   max-width: 820px;
   margin: 0 auto;
-  padding: 40px 20px 64px;
+  padding: 26px 20px 44px;
   flex: 1;
 }
 
 /* ── Hero Headline ── */
 .ap-hero {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .ap-hero-title {
-  font-size: clamp(28px, 4vw, 40px);
+  font-size: clamp(26px, 3.6vw, 36px);
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.1;
   color: var(--ink-primary);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .ap-hero-sub {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.47;
+  line-height: 1.45;
   letter-spacing: -0.01em;
   color: var(--ink-secondary);
 }
@@ -175,7 +175,7 @@ const APPLE_UI_CSS = `
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .ap-doc-pill {

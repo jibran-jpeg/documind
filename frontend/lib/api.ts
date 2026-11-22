@@ -37,12 +37,11 @@ export const SAMPLE_DOCUMENTS: StudyDocument[] = [
   {
     id: "documind-overview",
     filename: "DocuMind_Product_Guide.pdf",
-    title: "DocuMind Product & RAG Guide",
+    title: "DocuMind RAG Guide",
     tag: "AI Architecture · 5 Pages",
     pagesCount: 5,
     mode: "browser",
     quickQuestions: [
-      "How does DocuMind answer questions from a PDF?",
       "Which AI models are used under the hood?",
       "How does it avoid making up fake answers?",
       "How fast is the search and response time?",
@@ -98,7 +97,7 @@ export const SAMPLE_DOCUMENTS: StudyDocument[] = [
   {
     id: "crickconnect-guide",
     filename: "CrickConnect_Scouting_Report.pdf",
-    title: "CrickConnect AI Scouting System",
+    title: "CrickConnect Scouting",
     tag: "Sports AI · 4 Pages",
     pagesCount: 4,
     mode: "browser",
@@ -149,7 +148,7 @@ export const SAMPLE_DOCUMENTS: StudyDocument[] = [
   {
     id: "lacey-guide",
     filename: "Lacey_Storefront_Overview.pdf",
-    title: "Lacey Footwear Storefront & Edge AI",
+    title: "Lacey Storefront",
     tag: "E-Commerce · 3 Pages",
     pagesCount: 3,
     mode: "browser",
