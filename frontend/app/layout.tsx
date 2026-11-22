@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DocuMind — Grounded RAG Document Q&A Workbench",
+  title: "DocuMind — Private PDF Q&A Workspace",
   description:
-    "Retrieval-Augmented Generation (RAG) document analysis workbench built with Python FastAPI, LangChain, ChromaDB, HuggingFace all-MiniLM-L6-v2 embeddings, Groq Llama 3.1, and Next.js.",
+    "Upload any PDF and ask grounded questions with exact page citations in a private, session-isolated RAG workspace.",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
